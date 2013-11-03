@@ -1,12 +1,12 @@
 public class ShellSort {
 
   public static void sort(int[] sortMe) {
-    System.out.println(sortMe.length);
 
     for(int i=sortMe.length/(3); i>=0; i--) {
-      System.out.println(prettyPrint(sort(sortMe, 3*i+1)));
+      sort(sortMe, 3*i+1);
     }
 
+    System.out.println(prettyPrint(sortMe));
   }
 
   private static int[] sort(int[] sortMe, int shellSize) {
@@ -14,7 +14,7 @@ public class ShellSort {
 
 
     int temp;
-    System.out.println("Shell Sort " + shellSize);
+    // System.out.println("Shell Sort " + shellSize);
     for (int i=shellSize; i<sortMe.length; i+=shellSize) {
 
       for (int j=i-shellSize; j>=0; j-=shellSize) {
