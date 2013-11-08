@@ -1,16 +1,16 @@
 class QuickSort {
 
-  private static int partition(int[] a, int lo, int hi) {
+  private static int partition(int[] nuts, char bolt, int lo, int hi) {
 
     int i = lo, j = hi+1, pivot = lo, tmp;
 
     while(i<j) {
 
-      while (a[++i] < a[pivot] )
-        if (i == hi) 
+      while (a[++i] < bolt)
+        if (i == hi)
           break;
 
-      while (a[--j] > a[pivot] ) 
+      while (a[--j] > bolt)
         if (j == lo)
           break;
 
@@ -24,9 +24,9 @@ class QuickSort {
 
     }
 
-    tmp = a[pivot];
-    a[pivot] = a[j];
-    a[j] = tmp;
+//     tmp = a[pivot];
+//     a[pivot] = a[j];
+//     a[j] = tmp;
 
     return j;
 
@@ -52,7 +52,7 @@ class QuickSort {
     sort(a, pivot+1, hi);
 
   }
-  
+
   private static void prettyPrint(int[] printMe) {
     for(int i=0; i<printMe.length; i++) {
       System.out.print(printMe[i] + " ");

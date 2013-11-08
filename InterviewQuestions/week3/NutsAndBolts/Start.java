@@ -1,6 +1,7 @@
 class Start {
   public static void main (String [] args) {
-    int[] sortMe = new int[] {1,3,4,2,5,3,2,5,6,8,6,7,4,3,6,9,9,0,2};
+    int[] nuts = new int[] {1,3,4,2,5};
+    char[] bolts = new char[] {'D', 'B', 'A', 'E', 'C'}'
     QuickSort.sort(sortMe);
     prettyPrint(sortMe);
   }
