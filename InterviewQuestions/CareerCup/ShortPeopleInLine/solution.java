@@ -36,12 +36,10 @@ class ComparePersonPplInFront implements Comparator<Person> {
 class Solution {
   public static void main(String[] args) {
 
-    Person[] ppl = new Person[5];
-    ppl[0] = new Person(2, 0);
-    ppl[1] = new Person(4, 1);
-    ppl[2] = new Person(3, 1);
-    ppl[3] = new Person(6, 2);
-    ppl[4] = new Person(5, 2);
+    Person[] ppl = new Person[3];
+    ppl[0] = new Person(3, 0);
+    ppl[1] = new Person(2, 1);
+    ppl[2] = new Person(1, 1);
     
     print(ppl);
     
@@ -71,11 +69,4 @@ class Solution {
     }
     System.out.println();
   }
-  
-
-  // public static void sort(Person[] sortMe, int start, int end, String by) {
-  //   //in place sort
-
-  // }
-
 }
